@@ -1,0 +1,13 @@
+.popup{
+  background-color : white;
+  width : 200px;
+  height : 200px;
+  position:absolute;
+  top :50%;
+  left:50%;
+  transform: (-50%,-50%);
+}
+.is-larger-hovering{  
+  width: 100px;
+  height:100px;
+}

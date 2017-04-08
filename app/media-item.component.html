@@ -1,3 +1,4 @@
+<div>
 <h2>{{ mediaItem.name }}</h2>
 <template [ngIf]="mediaItem.watchedOn">
   <div>Watched on {{ mediaItem.watchedOn | date: 'shortDate' }}</div>
@@ -14,7 +15,8 @@
   <a class="delete" (click)="onDelete()">
     remove
   </a>
-  <a class="details">
-    watch
+  <a class="details" (click)="onPreview()">
+    Preview
   </a>
+</div>
 </div>

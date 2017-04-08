@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component , Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'mw-media-item-list',
@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['app/media-item-list.component.css']
 })
 export class MediaItemListComponent {
-
+  @Output() preview = new EventEmitter();
   onMediaItemDelete(mediaItem) { }
+
+  onMediaItemPreview(mediaItem) {
+    this.preview.emit(mediaItem);
+   }
 
   mediaItems = [
     {
