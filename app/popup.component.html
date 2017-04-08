@@ -1,14 +1,6 @@
 <div [hidden] = "isVisible()" class = "popup">
 
-<div>
-    <a class="delete" (click)="onPrev()">
-        Prev
-      </a>
-    <img [src]="imagePath()" [mwLarger]="false">
-    <a class="delete" (click)="onNext()">
-        Next
-      </a>
-</div>
+<mw-image></mw-image>
 
 <div>
     <h2>{{ mediaItem ? mediaItem.name : "" }}</h2>

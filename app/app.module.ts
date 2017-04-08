@@ -6,6 +6,7 @@ import { MediaItemComponent } from './media-item.component';
 import { MediaItemListComponent } from './media-item-list.component';
 import { FavoriteDirective } from './favorite.directive';
 import { PopupComponent } from './popup.component';
+import { ImageSwitcherComponent } from './image-switcher.component';
 import { LargerDirective } from './larger.directive';
 
 @NgModule({
@@ -18,7 +19,8 @@ import { LargerDirective } from './larger.directive';
     MediaItemListComponent,
     FavoriteDirective,
     PopupComponent,
-    LargerDirective
+    LargerDirective,
+    ImageSwitcherComponent
   ],
   bootstrap: [
     AppComponent

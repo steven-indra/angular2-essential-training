@@ -1,0 +1,11 @@
+<a class="delete" (click)="onPrev()">
+        Prev
+      </a>
+<div *ngFor="let image of images">
+    
+    <img [src]="image.path" [mwLarger]="false" *ngIf="image.id===index">
+    
+</div>
+<a class="delete" (click)="onNext()">
+        Next
+      </a>
